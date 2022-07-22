@@ -1,0 +1,1 @@
+INSERT INTO CLIENTE VALUES(1, 'BETTY', 'betty@techcamps.com', 12345678)
