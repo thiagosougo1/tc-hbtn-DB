@@ -1,6 +1,1 @@
-id|nome|email|telefone
-1|BETTY|betty@techcamps.com|12345678
-2|BETTY|betty@techcamps.com|12345678
-3|BETTY|betty@techcamps.com|12345678
-4|BETTY|betty@techcamps.com|12345678
-5|BETTY|betty@techcamps.com|12345678
+[{"id":1,"nome":"Betty","email":"betty@techcamps.com","telefone":12345678},{"id":2,"nome":"Thiago ","email":"thiago@techcamps.com","telefone":12345678},{"id":3,"nome":"Ana ","email":"Ana@techcamps.com","telefone":12345678},{"id":4,"nome":"Felipe ","email":"Felipe@techcamps.com","telefone":12345678},{"id":5,"nome":"Matheus ","email":"matheus@techcamps.com","telefone":12345678},{"id":6,"nome":"João ","email":"joao@techcamps.com","telefone":12345678}]
