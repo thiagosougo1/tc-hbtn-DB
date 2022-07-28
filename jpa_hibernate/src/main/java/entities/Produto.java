@@ -7,12 +7,12 @@ public class Produto {
     @Id
     private int id;
 
-    @Column
+    @Columns
     private String nome;
 
     @Column
     private int idade;
-    
+
     @Column
     private int quantidade;
 
