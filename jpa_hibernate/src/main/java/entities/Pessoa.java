@@ -8,7 +8,10 @@ public class Pessoa {
     private int id;
 
     @Column
-    private String NOME;
+    private String nome;
+
+    @Column
+    private int idade;
 
     @Column
     private String email;
