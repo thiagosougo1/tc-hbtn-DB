@@ -7,7 +7,7 @@ public class Pessoa {
     private int id;
 
     @Column
-    private String name;
+    private String NOME;
 
     @Column
     private String email;
