@@ -1,3 +1,4 @@
+package entities;
 
 @Entity
 @Table(name="produto")
