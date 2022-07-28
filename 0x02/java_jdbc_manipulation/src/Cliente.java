@@ -13,6 +13,8 @@ public class Cliente {
         setRg(rg);
     }
 
+    public Cliente(){}
+
     public int getId() {
         return id;
     }
