@@ -11,6 +11,9 @@ public class Produto {
     private String nome;
 
     @Column
+    private int idade;
+    
+    @Column
     private int quantidade;
 
     @Column
