@@ -4,6 +4,10 @@ package entities;
 @Table(name="pessoa")
 public class Pessoa {
 
+    public Pessoa(){
+
+    }
+
     @Id
     private int id;
 
