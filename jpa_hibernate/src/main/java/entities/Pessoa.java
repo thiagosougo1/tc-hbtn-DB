@@ -1,8 +1,8 @@
-package entities;
 
 @Entity
 @Table(name="pessoa")
 public class Pessoa {
+
     @Id
     private int id;
 
