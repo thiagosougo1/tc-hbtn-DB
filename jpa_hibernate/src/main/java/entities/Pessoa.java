@@ -16,5 +16,5 @@ public class Pessoa {
     private String cpf;
 
     @Column
-    private String dataDeNascimento;
+    private String dataNascimento;
 }
