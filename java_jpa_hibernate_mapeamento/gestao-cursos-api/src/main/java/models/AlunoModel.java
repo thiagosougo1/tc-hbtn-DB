@@ -6,7 +6,7 @@ import java.util.*;
 
 public class AlunoModel {
 
-    public void create(Aluno aluno) {
+    public static void create(Aluno aluno) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("gestao-cursos-jpa");
         EntityManager em = emf.createEntityManager();
 
@@ -30,7 +30,7 @@ public class AlunoModel {
         return null;
     }
 
-    public  List<Aluno> findAll() {
+    public static List<Aluno> findAll() {
         // TODO
         return null;
     }

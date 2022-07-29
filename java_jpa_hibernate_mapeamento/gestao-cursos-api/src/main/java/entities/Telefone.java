@@ -17,7 +17,7 @@ public class Telefone {
     private String numero;
 
     public Telefone(){
-        
+
     }
     public Telefone(long id, String DDD, String numero) {
         this.id = id;
