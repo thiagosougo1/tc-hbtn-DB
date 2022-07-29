@@ -2,6 +2,7 @@ package models;
 
 import entities.Aluno;
 import javax.persistence.*;
+import java.util.*;
 
 public class AlunoModel {
 
