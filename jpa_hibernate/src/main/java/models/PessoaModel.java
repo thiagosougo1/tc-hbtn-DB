@@ -23,22 +23,34 @@ public class PessoaModel {
 
 
     public void update(Pessoa p) {
-        //TODO
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("admin-jpa");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Pessoa atualizacao = em.merge(p);
+        em.getTransaction().commit();
     }
 
     public void delete(Pessoa p) {
-        //TODO
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("admin-jpa");
+        EntityManager em = emf.createEntityManager();
+        Pessoa produtoBuscado = em.find(Pessoa.class, p);
+        em.getTransaction().begin();
+        em.remove(p);
+        em.getTransaction().commit();
     }
 
     public Produto findById(Pessoa p) {
-        //TODO
-        return null;
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("admin-jpa");
+        EntityManager em = emf.createEntityManager();
+        Pessoa pessoaBuscado = em.find(Pessoa.class, p);
+        return pessoaBuscado;
     }
 
-    public List<Pessoa> findAll() {
-
-        List<Pessoa> pessoa = new ArrayList<Pessoa>();
-        //TODO
-        return null;
-    }
+    @SuppressWarnings("unchecked")
+        public List<Pessoa> findAll() {
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("admin-jpa");
+            EntityManager em = emf.createEntityManager();
+            return em.createQuery("FROM " +
+                    Pessoa.class.getName()).getResultList();
+        }
 }

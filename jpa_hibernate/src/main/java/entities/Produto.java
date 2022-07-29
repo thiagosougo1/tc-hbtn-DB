@@ -1,7 +1,12 @@
 package entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 @Entity
-@Table(name="produto")
+@Table(name="Produto")
 public class Produto {
 
     public Produto(){

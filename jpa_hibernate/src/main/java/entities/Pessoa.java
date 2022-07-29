@@ -1,8 +1,13 @@
 package entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Table;
+import java.io.Serializable;
 @Entity
-@Table(name="pessoa")
-public class Pessoa {
+@Table(name="Pessoa")
+public class Pessoa implements Serializable {
 
     public Pessoa(){
 
